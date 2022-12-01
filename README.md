@@ -15,7 +15,7 @@ I presented the final website at [OFFF Festival](https://www.offf.barcelona/) 20
 
 Exploring the concept of time during the Covid-19 pandemic, this project is a time capsule made with material found on social media and news feeds. 
 
-The web app uses WebGL, an experimental web technology, to push the boundaries of web and software engineering.
+The web app uses WebGL, an experimental web technology, to push the boundaries between web experiences and software engineering.
 
 ## Tech Stack
 
