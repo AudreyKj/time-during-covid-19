@@ -7,7 +7,7 @@
 
 In October 2020, I was selected as the Digital Interaction/Web Development winner of the [Creative Mentorship program](https://www.offf.barcelona/post/creative-mentorship-2020-2021-winners) organized by [Adobe](https://www.adobe.com/) and [OFFF Festival](https://www.offf.barcelona/). 
 
-This full-stack, web app was commissioned by  [Adobe](https://www.adobe.com/) as a part of this program. I developed the app during 6 months, building everything from scratch. I was mentored by the (amazing!) design studio [Anton & Irene](https://antonandirene.com/) for the app's ideation, design, and UX. 
+This full-stack, web app was commissioned by  [Adobe](https://www.adobe.com/) as a part of this program. I developed the app during 7 months, building everything from scratch. I was mentored by the (amazing!) design studio [Anton & Irene](https://antonandirene.com/) for the app's ideation, design, and UX. 
 
 I presented the final website at [OFFF Festival](https://www.offf.barcelona/) 2021 edition.
 
