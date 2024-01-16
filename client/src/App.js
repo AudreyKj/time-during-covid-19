@@ -120,7 +120,7 @@ export default class App extends Component {
         window.requestAnimationFrame(this.tunnelAnimation.bind(this));
 
         //LIKES 
-        axios.get('/getLikes').then(res => {
+        axios.get('/getlikes').then(res => {
             const count = parseInt(res.data[0].count)
             this.setState({ likes: count })
         }).catch(error => error)
@@ -350,6 +350,22 @@ export default class App extends Component {
 
     closeModal = () => {
         this.setState({ image: "" })
+    }
+
+    addLike = () => {
+
+        const previousLike = sessionStorage.getItem('like');
+
+        if (previousLike) return;
+
+        axios.post("/like")
+            .then(() => {
+
+                this.setState((prevState) => ({ likes: prevState.likes + 1 }))
+
+                sessionStorage.setItem('like', 'heart');
+            })
+            .catch(error => console.log("error", error))
     }
 
     render() {

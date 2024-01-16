@@ -14,21 +14,21 @@ export function SurveyOne() {
     }, [])
 
     const submitAssertion = () => {
-        axios.post("/user/timePerception/assertion").then(() => {
+        axios.post("/user/timeperception/assertion").then(() => {
             sessionStorage.setItem('surveyOne', 'answered');
             showAnswerSurveyTimePerception()
         }).catch(error => console.log(error))
     }
 
     const submitNegation = () => {
-        axios.post("/user/timePerception/negation").then(() => {
+        axios.post("/user/timeperception/negation").then(() => {
             sessionStorage.setItem('surveyOne', 'answered');
             showAnswerSurveyTimePerception()
         }).catch(error => console.log(error))
     }
 
     const showAnswerSurveyTimePerception = () => {
-        axios.get("/users/timePerception/results")
+        axios.get("/users/timeperception/results")
             .then((res) => {
                 setDataSurveyOne(res.data);
                 setAlreadyAnswered(false)

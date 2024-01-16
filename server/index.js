@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //POST like 
-app.post("/giveLike", async (req, res) => {
+app.post("/like", async (req, res) => {
   try {
     const timestamp = Math.floor(Date.now() / 1000);
     await pool.query(
@@ -35,7 +35,7 @@ app.post("/giveLike", async (req, res) => {
 
 
 //GET number of likes 
-app.get("/getLikes", async (req, res) => {
+app.get("/getlikes", async (req, res) => {
   try {
     const getLikeCount = await pool.query(
       "SELECT COUNT(heart_id) FROM heart_likes"
@@ -48,7 +48,7 @@ app.get("/getLikes", async (req, res) => {
 });
 
 //POST time perception changed: assertion
-app.post("/user/timePerception/assertion", async (req, res) => {
+app.post("/user/timeperception/assertion", async (req, res) => {
   try {
     await pool.query(
       "INSERT INTO time_perception(assertion) VALUES(true) RETURNING *",
@@ -61,7 +61,7 @@ app.post("/user/timePerception/assertion", async (req, res) => {
 });
 
 //POST time perception changed: negation 
-app.post("/user/timePerception/negation", async (req, res) => {
+app.post("/user/timeperception/negation", async (req, res) => {
   try {
     await pool.query(
       "INSERT INTO time_perception(negation) VALUES(true) RETURNING *",
@@ -75,7 +75,7 @@ app.post("/user/timePerception/negation", async (req, res) => {
 
 
 //POST mood representation: tornado 
-app.post("/user/moodRepresentation/tornado", async (req, res) => {
+app.post("/user/mood/tornado", async (req, res) => {
   try {
     await pool.query(
       "INSERT INTO mood_representation(tornado) VALUES(true) RETURNING *"
@@ -89,7 +89,7 @@ app.post("/user/moodRepresentation/tornado", async (req, res) => {
 
 
 //POST mood representation: rose
-app.post("/user/moodRepresentation/rose", async (req, res) => {
+app.post("/user/mood/rose", async (req, res) => {
   try {
     await pool.query(
       "INSERT INTO mood_representation(rose) VALUES(true) RETURNING *"
@@ -104,7 +104,7 @@ app.post("/user/moodRepresentation/rose", async (req, res) => {
 
 
 //POST mood representation: seed
-app.post("/user/moodRepresentation/seed", async (req, res) => {
+app.post("/user/mood/seed", async (req, res) => {
   try {
     await pool.query(
       "INSERT INTO mood_representation(seed) VALUES(true) RETURNING *"
@@ -157,7 +157,7 @@ app.post("/user/feeling/normal", async (req, res) => {
 
 
 //GET time perception survey results
-app.get("/users/timePerception/results", async (req, res) => {
+app.get("/users/timeperception/results", async (req, res) => {
   try {
     const noAnswers = await pool.query(
       "SELECT COUNT(negation) FROM time_perception"

@@ -33,7 +33,7 @@ export function SurveyThree() {
             return;
         }
 
-        axios.post("/user/moodRepresentation/tornado").then(() => {
+        axios.post("/user/mood/tornado").then(() => {
             showAnswerSurveyUserMood()
         }).catch(error => console.log(error))
     }
@@ -46,7 +46,7 @@ export function SurveyThree() {
             return;
         }
 
-        axios.post("/user/moodRepresentation/seed").then(() => {
+        axios.post("/user/mood/seed").then(() => {
             showAnswerSurveyUserMood()
         }).catch(error => console.log(error))
     }
@@ -59,7 +59,7 @@ export function SurveyThree() {
             return;
         }
 
-        axios.post("/user/moodRepresentation/rose").then(() => {
+        axios.post("/user/mood/rose").then(() => {
             showAnswerSurveyUserMood()
         }).catch(error => console.log(error))
     }
