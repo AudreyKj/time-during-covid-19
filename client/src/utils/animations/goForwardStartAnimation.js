@@ -2,8 +2,6 @@ import { TimelineMax, RoughEase, Power0 } from "gsap/all";
 
 export function goForwardStart(){
 
-    console.log('GO FORWARDS START ANIM');
-
     let goForwardStart = new TimelineMax({ repeat: 0 });
     goForwardStart.from(
         this.camera.position,
