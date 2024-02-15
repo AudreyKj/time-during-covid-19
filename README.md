@@ -49,6 +49,12 @@ npm start
 <br />
 You will need to set up a local [PostgreSQL database](https://www.postgresql.org/download/) and set up the related environment variables. Once the database is created, connect to your database, and create the tables found in `./server/database.sql`.
 
+## Screenshots 
+
+![screenshot](screenshot1.png)
+
+![screenshot](screenshot2.png)
+
 ## Author
 
 - Audrey Kadjar

@@ -419,8 +419,8 @@ export default class App extends Component {
                                 <div className="socialButtonsModal">
                                     <EmailShareButton url={'https://www.timeduringcovid19.com'} separator={'\n 🔗'} subject={'TIME DURING COVID-19'} body={'A creative website exploring time during COVID-19'} onClick={() => { }}
                                         openShareDialogOnClick>EMAIL</EmailShareButton>
-                                    <FacebookShareButton url={"https://www.timeduringcovid19.com"} quote={'TIME DURING COVID-19'} hashtag={'#covid19'}>&nbsp;FACEBOOK&nbsp;</FacebookShareButton>
-                                    <TwitterShareButton url={"https://www.timeduringcovid19.com"} title={'TIME DURING COVID-19 \n A creative website exploring time during COVID-19'} hashtags={['covid19', "coolwebsite", 'creativecoding', 'OFFFfestival', 'adobe', 'creativeMentorship']} >&nbsp;TWITTER&nbsp;</TwitterShareButton>
+                                    <FacebookShareButton url={"https://www.timeduringcovid19.com"} quote={'TIME DURING COVID-19'} hashtag={'#covid19'}>FACEBOOK</FacebookShareButton>
+                                    <TwitterShareButton url={"https://www.timeduringcovid19.com"} title={'TIME DURING COVID-19 \n A creative website exploring time during COVID-19'} hashtags={['covid19', "coolwebsite", 'creativecoding', 'OFFFfestival', 'adobe', 'creativeMentorship']} >TWITTER</TwitterShareButton>
                                 </div>
 
 

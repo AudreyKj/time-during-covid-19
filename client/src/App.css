@@ -673,7 +673,7 @@ div.socialButtonsModal {
 
 
   div.surveyOne{
-  width: 60%;
+  width: 52%;
   font-size: 2rem;
   height: auto;
   backdrop-filter: blur(40px);
@@ -695,16 +695,9 @@ div.socialButtonsModal {
     z-index:12;
   }
 
-  @media (max-width: 1385px){
+  @media (min-width: 1900px){
     div.surveyOne{
-      width: 65%;
-    }
-
-  }
-
-  @media (max-width: 1250px){
-    div.surveyOne{
-      width: 80%;
+      width: 40%;
     }
 
   }
@@ -722,8 +715,8 @@ div.socialButtonsModal {
     cursor:pointer;
   }
 
-  div.surveyTwo{
-    width: 60%;
+  div.surveyTwo {
+    width: 52%;
     font-size: 2rem;
     height: auto;
     top: 22%;
@@ -744,23 +737,14 @@ div.socialButtonsModal {
     }
 
 
-    @media (max-width: 1385px){
+    @media (min-width: 1900px){
       div.surveyTwo{
-        width: 65%;
+        width: 40%;
       }
   
     }
-  
-    @media (max-width: 1250px){
-      div.surveyTwo{
-        width: 80%;
-      }
-  
-    }
-
-
     div.surveyThree{
-      width: 60%;
+      width: 52%;
       font-size: 2rem;
       height: auto;
       top: 42%;
@@ -781,20 +765,12 @@ div.socialButtonsModal {
         z-index:12;
       }
 
-      @media (max-width: 1385px){
-        div.surveyThree{
-          width: 65%;
+      @media (min-width: 1900px){
+        div.surveyThree {
+          width: 40%;
         }
     
       }
-    
-      @media (max-width: 1250px){
-        div.surveyThree{
-          width: 80%;
-        }
-    
-      }
-
 
   
   
@@ -1010,9 +986,6 @@ div.socialButtonsModal {
       transform: translateX(-50%) translateY(-50%);
   } 
 
-
-
-
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -1067,47 +1040,6 @@ div.socialButtonsModal {
     font-size:1rem;
   }
 
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-
-  
-
-
-  
-
-  
-
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-
-
-  
+  .react-share__ShareButton {
+    padding: auto;
+  }
