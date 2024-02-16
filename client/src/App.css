@@ -503,9 +503,6 @@ span.mobileText {
       }
     }
 
-  
-
-
 
   .burst {
     animation: burst 2.5s;
@@ -1038,8 +1035,4 @@ div.socialButtonsModal {
 
   .small-name-label {
     font-size:1rem;
-  }
-
-  .react-share__ShareButton {
-    padding: auto;
   }
